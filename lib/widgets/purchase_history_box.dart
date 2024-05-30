@@ -9,6 +9,7 @@ class PurchaseHistoryBox extends StatelessWidget {
   final String additionalInfo1;
   final String additionalInfo2;
   final String imagePath;
+  final String imagePath2;
   final String status;
   final List<String> tags;
   final List<Map<String, dynamic>> buttons;
@@ -26,6 +27,7 @@ class PurchaseHistoryBox extends StatelessWidget {
     required this.additionalInfo1,
     required this.additionalInfo2,
     required this.imagePath,
+    required this.imagePath2,
     required this.status,
     required this.tags,
     required this.buttons,
@@ -53,10 +55,11 @@ class PurchaseHistoryBox extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    Icon(
-                      Icons.store_mall_directory_outlined,
-                      size: 28,
-                      color: Colors.grey.shade600,
+                    Image.asset(
+                      imagePath2,
+                      width: 30,
+                      height: 30,
+                      fit: BoxFit.cover,
                     ),
                     const SizedBox(
                       width: 4,
@@ -87,7 +90,7 @@ class PurchaseHistoryBox extends StatelessWidget {
                 ),
               ],
             ),
-            const SizedBox(height: 16.0),
+            const SizedBox(height: 10.0),
             Row(
               children: [
                 Image.asset(
@@ -99,7 +102,7 @@ class PurchaseHistoryBox extends StatelessWidget {
                 const SizedBox(width: 16.0),
                 Expanded(
                   child: Transform.translate(
-                    offset: const Offset(0, -20),
+                    offset: const Offset(0, -15),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -195,7 +198,7 @@ class PurchaseHistoryBox extends StatelessWidget {
                   additionalInfo2,
                   style: const TextStyle(
                     fontSize: 16.0,
-                    fontWeight: FontWeight.w500,
+                    fontWeight: FontWeight.w600,
                   ),
                 ),
               ],

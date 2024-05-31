@@ -1,5 +1,12 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:taobaocopyapp/detail_page.dart';
+import 'package:taobaocopyapp/detail_page01.dart';
+import 'package:taobaocopyapp/detail_page02.dart';
+import 'package:taobaocopyapp/widgets/detail_page03.dart';
+import 'package:taobaocopyapp/widgets/detail_page04.dart';
+import 'package:taobaocopyapp/widgets/detail_page05.dart';
 import 'package:taobaocopyapp/widgets/purchase_history_box.dart';
 import 'package:taobaocopyapp/widgets/purchase_history_double_box.dart';
 
@@ -314,251 +321,299 @@ class PurchaseHistory extends StatelessWidget {
                 // Handle reorder action
               },
             ),
-            PurchaseHistoryBox(
-              storeName: '天天特卖工厂店',
-              productName: '棉签棒家用掏耳朵棉签化妆专用...',
-              price: '4.80',
-              status: '交易关闭',
-              quantity: 'x1',
-              additionalInfo1: '合运费险服务 ',
-              additionalInfo2: '实付款¥3.91',
-              productDetails: '双头棉签 500支 (尖头+圆头)',
-              tags: const ['7天无理由退换'],
-              imagePath: 'assets/images/image06.png',
-              imagePath2: 'assets/images/icon06.png',
-              ynn: true,
-              buttons: [
-                {
-                  'text': '查看物流',
-                  'onPressed': () {
-                    // Handle delete
-                  },
-                },
-                {
-                  'text': '评价',
-                  'onPressed': () {
-                    // Handle delete
-                  },
-                },
-                {
-                  'text': '加入购物车',
-                  'onPressed': () {
-                    // Handle reorder
-                  },
-                  'color': Colors.orange,
-                },
-              ],
-              onDelete: () {
-                // Handle delete action
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const DetailPage02()),
+                );
               },
-              onReorder: () {
-                // Handle reorder action
-              },
+              child: PurchaseHistoryBox(
+                storeName: '天天特卖工厂店',
+                productName: '棉签棒家用掏耳朵棉签化妆专用...',
+                price: '4.80',
+                status: '交易关闭',
+                quantity: 'x1',
+                additionalInfo1: '合运费险服务 ',
+                additionalInfo2: '实付款¥3.91',
+                productDetails: '双头棉签 500支 (尖头+圆头)',
+                tags: const ['7天无理由退换'],
+                imagePath: 'assets/images/image06.png',
+                imagePath2: 'assets/images/icon06.png',
+                ynn: true,
+                buttons: [
+                  {
+                    'text': '查看物流',
+                    'onPressed': () {
+                      // Handle delete
+                    },
+                  },
+                  {
+                    'text': '评价',
+                    'onPressed': () {
+                      // Handle delete
+                    },
+                  },
+                  {
+                    'text': '加入购物车',
+                    'onPressed': () {
+                      // Handle reorder
+                    },
+                    'color': Colors.orange,
+                  },
+                ],
+                onDelete: () {
+                  // Handle delete action
+                },
+                onReorder: () {
+                  // Handle reorder action
+                },
+              ),
             ),
-            PurchaseHistoryBox(
-              storeName: '巴喜路旗舰店',
-              productName: '巴喜路创意手环超级快充数据线...',
-              price: '16.50',
-              status: '交易关闭',
-              quantity: 'x1',
-              additionalInfo1: '合15天价保等服务 ',
-              additionalInfo2: '实付款¥15.50',
-              productDetails: '22cm2条装【苹果USB接口】创\n意手环快充线',
-              tags: const ['假一赔四', '7天无理由退换', '15天价保'],
-              imagePath: 'assets/images/image07.png',
-              imagePath2: 'assets/images/icon01.png',
-              ynn: true,
-              buttons: [
-                {
-                  'text': '更多',
-                  'onPressed': () {
-                    // Handle delete
-                  },
-                },
-                {
-                  'text': '评价',
-                  'onPressed': () {
-                    // Handle delete
-                  },
-                },
-                {
-                  'text': '加入购物车',
-                  'onPressed': () {
-                    // Handle reorder
-                  },
-                  'color': Colors.orange,
-                },
-              ],
-              onDelete: () {
-                // Handle delete action
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const DetailPage01()),
+                );
               },
-              onReorder: () {
-                // Handle reorder action
-              },
+              child: PurchaseHistoryBox(
+                storeName: '巴喜路旗舰店',
+                productName: '巴喜路创意手环超级快充数据线...',
+                price: '16.50',
+                status: '交易关闭',
+                quantity: 'x1',
+                additionalInfo1: '合15天价保等服务 ',
+                additionalInfo2: '实付款¥15.50',
+                productDetails: '22cm2条装【苹果USB接口】创\n意手环快充线',
+                tags: const ['假一赔四', '7天无理由退换', '15天价保'],
+                imagePath: 'assets/images/image07.png',
+                imagePath2: 'assets/images/icon01.png',
+                ynn: true,
+                buttons: [
+                  {
+                    'text': '更多',
+                    'onPressed': () {
+                      // Handle delete
+                    },
+                  },
+                  {
+                    'text': '评价',
+                    'onPressed': () {
+                      // Handle delete
+                    },
+                  },
+                  {
+                    'text': '加入购物车',
+                    'onPressed': () {
+                      // Handle reorder
+                    },
+                    'color': Colors.orange,
+                  },
+                ],
+                onDelete: () {
+                  // Handle delete action
+                },
+                onReorder: () {
+                  // Handle reorder action
+                },
+              ),
             ),
-            PurchaseHistoryBox(
-              storeName: '读创图书旗舰店',
-              productName: '大树 贝纳尔·韦尔贝幻想之作...',
-              price: '21.00',
-              status: '买家已付款',
-              quantity: 'x1',
-              additionalInfo1: '含升级版运费险服务 ',
-              additionalInfo2: '实付款¥21.00',
-              productDetails: '',
-              tags: const ['假一赔四', '7天无理由退换'],
-              imagePath: 'assets/images/image08.png',
-              imagePath2: 'assets/images/icon01.png',
-              ynn: false,
-              buttons: [
-                {
-                  'text': '申请开票',
-                  'onPressed': () {
-                    // Handle delete
-                  },
-                },
-                {
-                  'text': '催发货',
-                  'onPressed': () {
-                    // Handle delete
-                  },
-                },
-                {
-                  'text': '修改地址',
-                  'onPressed': () {
-                    // Handle reorder
-                  },
-                  'color': Colors.orange,
-                },
-              ],
-              onDelete: () {
-                // Handle delete action
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const DetailPage()),
+                );
               },
-              onReorder: () {
-                // Handle reorder action
-              },
+              child: PurchaseHistoryBox(
+                storeName: '读创图书旗舰店',
+                productName: '大树 贝纳尔·韦尔贝幻想之作...',
+                price: '21.00',
+                status: '买家已付款',
+                quantity: 'x1',
+                additionalInfo1: '含升级版运费险服务 ',
+                additionalInfo2: '实付款¥21.00',
+                productDetails: '',
+                tags: const ['假一赔四', '7天无理由退换'],
+                imagePath: 'assets/images/image08.png',
+                imagePath2: 'assets/images/icon01.png',
+                ynn: false,
+                buttons: [
+                  {
+                    'text': '申请开票',
+                    'onPressed': () {
+                      // Handle delete
+                    },
+                  },
+                  {
+                    'text': '催发货',
+                    'onPressed': () {
+                      // Handle delete
+                    },
+                  },
+                  {
+                    'text': '修改地址',
+                    'onPressed': () {
+                      // Handle reorder
+                    },
+                    'color': Colors.orange,
+                  },
+                ],
+                onDelete: () {
+                  // Handle delete action
+                },
+                onReorder: () {
+                  // Handle reorder action
+                },
+              ),
             ),
-            PurchaseHistoryBox(
-              storeName: '梓晨旗舰店',
-              productName: '【狂欢价】硬硅藻泥浴室吸水地垫家...',
-              price: '41.00',
-              status: '卖家已发货',
-              quantity: 'x1',
-              additionalInfo1: '含全程价保等服务 ',
-              additionalInfo2: '实付款¥36.00',
-              productDetails: '45X35cm［买就送防滑地垫|清\n洁片】；深灰-方形',
-              tags: const ['假一赔四', '7天无理由退换', '全程价保'],
-              imagePath: 'assets/images/image09.png',
-              imagePath2: 'assets/images/icon01.png',
-              ynn: true,
-              buttons: [
-                {
-                  'text': '延长收货',
-                  'onPressed': () {
-                    // Handle delete
-                  },
-                },
-                {
-                  'text': '查看物流',
-                  'onPressed': () {
-                    // Handle delete
-                  },
-                },
-                {
-                  'text': '确认收货',
-                  'onPressed': () {
-                    // Handle reorder
-                  },
-                  'color': Colors.orange,
-                },
-              ],
-              onDelete: () {
-                // Handle delete action
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const DetailPage03()),
+                );
               },
-              onReorder: () {
-                // Handle reorder action
-              },
+              child: PurchaseHistoryBox(
+                storeName: '梓晨旗舰店',
+                productName: '【狂欢价】硬硅藻泥浴室吸水地垫家...',
+                price: '41.00',
+                status: '卖家已发货',
+                quantity: 'x1',
+                additionalInfo1: '含全程价保等服务 ',
+                additionalInfo2: '实付款¥36.00',
+                productDetails: '45X35cm［买就送防滑地垫|清\n洁片】；深灰-方形',
+                tags: const ['假一赔四', '7天无理由退换', '全程价保'],
+                imagePath: 'assets/images/image09.png',
+                imagePath2: 'assets/images/icon01.png',
+                ynn: true,
+                buttons: [
+                  {
+                    'text': '延长收货',
+                    'onPressed': () {
+                      // Handle delete
+                    },
+                  },
+                  {
+                    'text': '查看物流',
+                    'onPressed': () {
+                      // Handle delete
+                    },
+                  },
+                  {
+                    'text': '确认收货',
+                    'onPressed': () {
+                      // Handle reorder
+                    },
+                    'color': Colors.orange,
+                  },
+                ],
+                onDelete: () {
+                  // Handle delete action
+                },
+                onReorder: () {
+                  // Handle reorder action
+                },
+              ),
             ),
-            PurchaseHistoryBox(
-              storeName: '佳帮手首品专卖店',
-              productName: '硅藻泥吸水垫卫生间浴室地垫防...',
-              price: '22.90',
-              status: '等待买家付款',
-              quantity: 'x1',
-              additionalInfo1: '合15天价保等服务 ',
-              additionalInfo2: '实付款¥15.50',
-              productDetails: '経済款 35x25cm⭐️长白山天\n然硅藻泥*浅灰',
-              tags: const ['破损包退', '假一赔四', '7天无理由退换'],
-              imagePath: 'assets/images/image10.png',
-              imagePath2: 'assets/images/icon01.png',
-              ynn: true,
-              buttons: [
-                {
-                  'text': '更多',
-                  'onPressed': () {
-                    // Handle delete
-                  },
-                },
-                {
-                  'text': '评价',
-                  'onPressed': () {
-                    // Handle delete
-                  },
-                },
-                {
-                  'text': '加入购物车',
-                  'onPressed': () {
-                    // Handle reorder
-                  },
-                  'color': Colors.orange,
-                },
-              ],
-              onDelete: () {
-                // Handle delete action
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const DetailPage04()),
+                );
               },
-              onReorder: () {
-                // Handle reorder action
-              },
+              child: PurchaseHistoryBox(
+                storeName: '佳帮手首品专卖店',
+                productName: '硅藻泥吸水垫卫生间浴室地垫防...',
+                price: '22.90',
+                status: '等待买家付款',
+                quantity: 'x1',
+                additionalInfo1: '合15天价保等服务 ',
+                additionalInfo2: '实付款¥15.50',
+                productDetails: '経済款 35x25cm⭐️长白山天\n然硅藻泥*浅灰',
+                tags: const ['破损包退', '假一赔四', '7天无理由退换'],
+                imagePath: 'assets/images/image10.png',
+                imagePath2: 'assets/images/icon01.png',
+                ynn: true,
+                buttons: [
+                  {
+                    'text': '更多',
+                    'onPressed': () {
+                      // Handle delete
+                    },
+                  },
+                  {
+                    'text': '评价',
+                    'onPressed': () {
+                      // Handle delete
+                    },
+                  },
+                  {
+                    'text': '加入购物车',
+                    'onPressed': () {
+                      // Handle reorder
+                    },
+                    'color': Colors.orange,
+                  },
+                ],
+                onDelete: () {
+                  // Handle delete action
+                },
+                onReorder: () {
+                  // Handle reorder action
+                },
+              ),
             ),
-            PurchaseHistoryBox(
-              storeName: '潮拍旗舰店',
-              productName: '适用airpodspro2贴纸 pro2...',
-              price: '12.80',
-              status: '交易成功',
-              quantity: 'x1',
-              additionalInfo1: '',
-              additionalInfo2: '实付款¥12.80',
-              productDetails: 'AirPods 3代【银色】金属防尘贴',
-              tags: const ['假一赔四', '7天无理由退换'],
-              imagePath: 'assets/images/image11.png',
-              imagePath2: 'assets/images/icon01.png',
-              ynn: true,
-              buttons: [
-                {
-                  'text': '查看物流',
-                  'onPressed': () {
-                    // Handle delete
-                  },
-                },
-                {
-                  'text': '加入购物车',
-                  'onPressed': () {
-                    // Handle delete
-                  },
-                },
-                {
-                  'text': '再买一单',
-                  'onPressed': () {
-                    // Handle reorder
-                  },
-                  'color': Colors.orange,
-                },
-              ],
-              onDelete: () {
-                // Handle delete action
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const DetailPage05()),
+                );
               },
-              onReorder: () {
-                // Handle reorder action
-              },
+              child: PurchaseHistoryBox(
+                storeName: '潮拍旗舰店',
+                productName: '适用airpodspro2贴纸 pro2...',
+                price: '12.80',
+                status: '交易成功',
+                quantity: 'x1',
+                additionalInfo1: '',
+                additionalInfo2: '实付款¥12.80',
+                productDetails: 'AirPods 3代【银色】金属防尘贴',
+                tags: const ['假一赔四', '7天无理由退换'],
+                imagePath: 'assets/images/image11.png',
+                imagePath2: 'assets/images/icon01.png',
+                ynn: true,
+                buttons: [
+                  {
+                    'text': '查看物流',
+                    'onPressed': () {
+                      // Handle delete
+                    },
+                  },
+                  {
+                    'text': '加入购物车',
+                    'onPressed': () {
+                      // Handle delete
+                    },
+                  },
+                  {
+                    'text': '再买一单',
+                    'onPressed': () {
+                      // Handle reorder
+                    },
+                    'color': Colors.orange,
+                  },
+                ],
+                onDelete: () {
+                  // Handle delete action
+                },
+                onReorder: () {
+                  // Handle reorder action
+                },
+              ),
             ),
             PurchaseHistoryBox(
               storeName: '友杰图书专营店',
